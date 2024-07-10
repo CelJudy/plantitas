@@ -1,0 +1,35 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="public/css/bootstrap.css">
+        <script src="public/js/bootstrap.js"></script>
+    </header>
+    <script>
+        function validar(){
+            var input1=document.getElementById("input1").value;
+            if(input1=="" || input2==""){
+                alert("te falta")
+            }else{
+                alert("listo")
+            }
+        }
+    </script>
+    <body>
+        <form method="POST" action="guardarInfo.php">
+            <label for="correo">Correo</label>
+            <input type="text" readonly id="correo">
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass">
+            <label for="lista"></label>
+            <select id="lista" name="lista">
+                <option value="5">flor</option>
+                <option value="10">suculenta</option>
+            </select>
+            <input type="checkbox">
+            <!-- <button onclick="validar()"></button> -->
+            <input type="submit">
+        </form>
+    </body>
+    <footer>
+
+    </footer>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="public/css/bootstrap.css">
+        <script src="public/js/bootstrap.js"></script>
+    </header>
+    <script>
+        function validar(){
+            var mensaje=document.getElementById("texto").value;
+            alert(mensaje)
+        }
+        function comer(){
+            alert("hoy vas a comer:"+document.getElementById("lista").value)
+        }
+        function cambiarTexto(){
+            document.getElementById("hola").innerHTML="<h1>hello world</h1>";
+        }
+    </script>
+    <body>
+            
+            <label for="texto">texto</label>
+            <input type="text" id="texto">
+            
+            <button onclick="validar()">haz click</button>
+
+            <label for="lista">texto</label>
+            <select id="lista">
+                <option value="1">tacos</option>
+                <option value="2">quesadillas</option>
+                <option value="3">pozole</option>
+            </select>
+            <button onclick="comer()">que vas a comer?</button><br>
+            <div id="hola">hola mundo</div>
+            <button onclick="cambiarTexto()">hola</button>
+    </body>
+    <footer>
+
+    </footer>
+</html>
